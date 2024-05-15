@@ -1,0 +1,59 @@
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Tipo de fuente para el cuerpo del documento */
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Margen superior e inferior automático y margen izquierdo y derecho automáticos */
+    background-color: #fff; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el encabezado principal */
+h1 {
+    text-align: center; /* Alineación centrada del texto */
+}
+
+/* Estilos para el contenedor de la imagen del equipo */
+.equipo-img {
+    text-align: center; /* Alineación centrada del texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para el contenedor de los miembros del equipo */
+.equipo {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola fila */
+    justify-content: center; /* Alinea los elementos en el centro horizontalmente */
+}
+
+/* Estilos para cada miembro del equipo */
+.miembro {
+    width: 200px; /* Ancho del contenedor de cada miembro */
+    margin: 20px; /* Margen exterior */
+    text-align: center; /* Alineación centrada del texto */
+}
+
+/* Estilos para la imagen de cada miembro */
+.miembro-img {
+    width: 150px; /* Ancho de la imagen */
+    height: 150px; /* Alto de la imagen */
+    border-radius: 50%; /* Borde redondeado para que la imagen sea circular */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para la información de contacto */
+.contacto {
+    margin-top: 5px; /* Margen superior */
+    text-align: center; /* Alineación centrada del texto */
+}
+
+/* Estilos para los párrafos de información de contacto */
+.contacto p {
+    margin: 5px 0; /* Margen superior e inferior */
+}
