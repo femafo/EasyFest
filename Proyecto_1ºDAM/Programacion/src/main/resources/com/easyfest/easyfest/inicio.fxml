@@ -11,7 +11,7 @@
          <children>
             <ImageView fitHeight="224.0" fitWidth="689.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 50;">
                <image>
-                  <Image url="@../../../img/img.jpg" />
+                  <Image url="@../../../img/imageRedondeda.jpg"/>
                </image>
             </ImageView>
          </children>
