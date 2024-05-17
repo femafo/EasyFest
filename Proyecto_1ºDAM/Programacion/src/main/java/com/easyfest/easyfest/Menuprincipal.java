@@ -9,8 +9,8 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 
 /**
- * Controller class for the main menu of the EasyFest application.
- * This class handles the navigation between different views.
+ * Es la Clase controladora para el menú principal de la aplicación EasyFest.
+ * Esta clase te permite ir a otras paginas de la web siendo este el menu principal.
  */
 public class Menuprincipal
 {
@@ -34,8 +34,8 @@ public class Menuprincipal
     private AnchorPane contenedorId;
 
     /**
-     * Initializes the controller class.
-     * This method is automatically called after the FXML file has been loaded.
+     * Inicializa la clase controladora.
+     * Este método se llama automáticamente después de que el archivo FXML ha sido cargado.
      */
     @javafx.fxml.FXML
     public void initialize() {
@@ -48,10 +48,10 @@ public class Menuprincipal
     }
 
     /**
-     * Handles the action event for the "Ajustes" button.
-     * Loads the "ajustes.fxml" file and sets it to the main container.
+     * Maneja el evento de acción para el botón "Ajustes".
+     * Carga el archivo "ajustes.fxml" y lo establece en el contenedor principal.
      *
-     * @param actionEvent the action event
+     * @param actionEvent el evento de acción
      */
     @javafx.fxml.FXML
     public void ajustesbutton(ActionEvent actionEvent) {
@@ -64,10 +64,10 @@ public class Menuprincipal
     }
 
     /**
-     * Handles the action event for the "Pagos" button.
-     * Loads the "pagos.fxml" file and sets it to the main container.
+     * Maneja el evento de acción para el botón "Pagos".
+     * Carga el archivo "pagos.fxml" y lo establece en el contenedor principal.
      *
-     * @param actionEvent the action event
+     * @param actionEvent el evento de acción
      */
     @javafx.fxml.FXML
     public void pagosbutton(ActionEvent actionEvent) {
@@ -80,10 +80,10 @@ public class Menuprincipal
     }
 
     /**
-     * Handles the action event for the "Ayuda" button.
-     * Loads the "ayuda.fxml" file and sets it to the main container.
+     * Maneja el evento de acción para el botón "Ayuda".
+     * Carga el archivo "ayuda.fxml" y lo establece en el contenedor principal.
      *
-     * @param actionEvent the action event
+     * @param actionEvent el evento de acción
      */
     @javafx.fxml.FXML
     public void ayudabutton(ActionEvent actionEvent) {
@@ -96,10 +96,10 @@ public class Menuprincipal
     }
 
     /**
-     * Handles the action event for the "Sobre Nosotros" button.
-     * Loads the "sobrenosotros.fxml" file and sets it to the main container.
+     * Maneja el evento de acción para el botón "Sobre Nosotros".
+     * Carga el archivo "sobrenosotros.fxml" y lo establece en el contenedor principal.
      *
-     * @param actionEvent the action event
+     * @param actionEvent el evento de acción
      */
     @javafx.fxml.FXML
     public void sobrenosotrosbutton(ActionEvent actionEvent) {
@@ -112,10 +112,10 @@ public class Menuprincipal
     }
 
     /**
-     * Handles the action event for the "Mensajes" button.
-     * Loads the "mensajes.fxml" file and sets it to the main container.
+     * Maneja el evento de acción para el botón "Mensajes".
+     * Carga el archivo "mensajes.fxml" y lo establece en el contenedor principal.
      *
-     * @param actionEvent the action event
+     * @param actionEvent el evento de acción
      */
     @javafx.fxml.FXML
     public void mensajesbutton(ActionEvent actionEvent) {
@@ -128,10 +128,10 @@ public class Menuprincipal
     }
 
     /**
-     * Handles the action event for the "Busqueda" button.
-     * Loads the "busqueda.fxml" file and sets it to the main container.
+     * Maneja el evento de acción para el botón "Busqueda".
+     * Carga el archivo "busqueda.fxml" y lo establece en el contenedor principal.
      *
-     * @param actionEvent the action event
+     * @param actionEvent el evento de acción
      */
     @javafx.fxml.FXML
     public void busquedabutton(ActionEvent actionEvent) {
@@ -144,10 +144,10 @@ public class Menuprincipal
     }
 
     /**
-     * Handles the action event for the "Inicio" button.
-     * Loads the "inicio.fxml" file and sets it to the main container.
+     * Maneja el evento de acción para el botón "Inicio".
+     * Carga el archivo "inicio.fxml" y lo establece en el contenedor principal.
      *
-     * @param actionEvent the action event
+     * @param actionEvent el evento de acción
      */
     @javafx.fxml.FXML
     public void iniciobutton(ActionEvent actionEvent) {
