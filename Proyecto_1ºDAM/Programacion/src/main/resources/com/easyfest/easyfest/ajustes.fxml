@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ajustesid" prefHeight="691.0" prefWidth="1374.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.easyfest.easyfest.AjustesController">
+   <children>
+      <Label layoutX="448.0" layoutY="14.0" text="Ajustes" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label layoutX="396.0" layoutY="480.0" text="Ajustes Generales" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="465.0" layoutY="168.0" text="Temas" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioButtonTextoPequeño" layoutX="51.0" layoutY="608.0" mnemonicParsing="false" text="Aaa" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleTamañoLetra" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonTextoMediano" layoutX="124.0" layoutY="603.0" mnemonicParsing="false" text="Aaa" textFill="WHITE" toggleGroup="$toggleTamañoLetra">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonTextoGrande" layoutX="208.0" layoutY="599.0" mnemonicParsing="false" text="Aaa" textFill="WHITE" toggleGroup="$toggleTamañoLetra">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="80.0" layoutY="557.0" text="Tamaño de la Letra" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="793.0" layoutY="557.0" text="Idioma" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="idiomaChoiceBox" layoutX="793.0" layoutY="596.0" prefWidth="150.0" />
+      <Pane layoutY="87.0" prefHeight="59.0" prefWidth="1097.0" style="-fx-background-color: gray;" />
+      <Pane layoutY="386.0" prefHeight="59.0" prefWidth="1104.0" style="-fx-background-color: gray;" />
+      <RadioButton fx:id="radioButtonTemaOscuro" layoutX="140.0" layoutY="338.0" mnemonicParsing="false" text="Tema Oscuro" textFill="#fffefe">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleTema" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonTemaClaro" layoutX="793.0" layoutY="338.0" mnemonicParsing="false" text="Tema Claro" textFill="WHITE" toggleGroup="$toggleTema" />
+      <ImageView fx:id="imageViewOscuro" fitHeight="150.0" fitWidth="200.0" layoutX="86.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageViewClaro" fitHeight="150.0" fitWidth="200.0" layoutX="724.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

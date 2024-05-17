@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="LoginPageid" prefHeight="780.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.easyfest.easyfest.Login">
+   <children>
+      <Button fx:id="loginid" layoutX="743.0" layoutY="428.0" mnemonicParsing="false" onAction="#login" style="-fx-background-radius: 50;" text="Iniciar Sesion" />
+      <TextField fx:id="passwordid" layoutX="714.0" layoutY="339.0" promptText="Contraseña" style="-fx-background-radius: 50;" />
+      <CheckBox fx:id="recuerdameid" layoutX="714.0" layoutY="383.0" mnemonicParsing="false" text="Recuérdame" />
+      <Label layoutX="685.0" layoutY="523.0" text="¿No tienes cuenta?" />
+      <Label fx:id="regisid" layoutX="799.0" layoutY="523.0" onMouseClicked="#resgistro" text="Regístrate" underline="true" />
+      <Label fx:id="forgotid" layoutX="708.0" layoutY="576.0" onMouseClicked="#forget" text="¿Has olvidado tu contraseña?" underline="true" />
+      <Label layoutX="755.0" layoutY="206.0" prefHeight="26.0" prefWidth="66.0" text="¡Bienvenido" />
+      <Label layoutX="783.0" layoutY="232.0" text="a" />
+      <Label layoutX="762.0" layoutY="257.0" text="EasyFest!" />
+      <TextField fx:id="usermailid" layoutX="715.0" layoutY="292.0" promptText="Usuario/Email" style="-fx-background-radius: 50;" />
+   </children>
+</AnchorPane>
