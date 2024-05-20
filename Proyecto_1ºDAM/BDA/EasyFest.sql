@@ -48,3 +48,11 @@ CREATE TABLE producto (
     fecha_inicio DATE,
     fecha_fin DATE
 );
+
+CREATE TABLE detalles_pedido (
+    id_pedido INT,
+    id_producto INT,
+    cantidad INT,
+    FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido),
+    FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
+);
