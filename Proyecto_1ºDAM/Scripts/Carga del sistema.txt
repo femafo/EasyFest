@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Configura las variables
+THRESHOLD=2.0
+BOT_TOKEN="tu_bot_token"
+CHAT_ID="tu_chat_id"
+EMAIL="tu_correo@example.com"
+SUBJECT="Advertencia: Alta Carga del Sistema"
+LOAD=$(uptime | awk -F'load average:' '{ print $2 }' | cut -d',' -f1)
+MESSAGE="Advertencia: La carga del sistema ha sobrepasado el umbral. Carga actual: $LOAD"
+
+# Compara la carga media del sistema con el umbral
+if (( $(echo "$LOAD > $THRESHOLD" | bc -l) )); then
+    # Envía un correo de advertencia
+    echo -e "$MESSAGE" | mail -s "$SUBJECT" $EMAIL
+
+    # Envía un mensaje por Telegram
+    curl -s -X POST "https://api.telegram.org/bot$BOT_TOKEN/sendMessage" -d chat_id=$CHAT_ID -d text="$MESSAGE"
+fi
