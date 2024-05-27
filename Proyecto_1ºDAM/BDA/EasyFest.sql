@@ -95,3 +95,16 @@ INSERT INTO usuario (fecha_nacimiento, nombre, apellidos, dni, correo, contrasen
 ('1992-08-30', 'Juan', 'Martinez', '45678901C', 'juan.martinez@example.com', 'password3', TRUE),
 ('1988-12-05', 'Laura', 'Gonzalez', '23456789D', 'laura.gonzalez@example.com', 'password4', FALSE),
 ('1995-07-19', 'David', 'Hernandez', '34567890E', 'david.hernandez@example.com', 'password5', FALSE);
+
+INSERT INTO tarjetas (id_usuario, fecha_caducidad, cvv, num_tarjeta, titular) VALUES
+(1, '2025-01-15', 123, '1111-2222-3333-4444', 'Carlos Garcia'),
+(1, '2026-02-16', 456, '5555-6666-7777-8888', 'Carlos Garcia'),
+(2, '2025-03-17', 789, '9999-0000-1111-2222', 'Maria Lopez'),
+(2, '2026-04-18', 321, '3333-4444-5555-6666', 'Maria Lopez'),
+(3, '2025-05-19', 654, '7777-8888-9999-0000', 'Juan Martinez'),
+(3, '2026-06-20', 987, '1111-2222-3333-4444', 'Juan Martinez'),
+(4, '2025-07-21', 123, '5555-6666-7777-8888', 'Laura Gonzalez'),
+(4, '2026-08-22', 456, '9999-0000-1111-2222', 'Laura Gonzalez'),
+(5, '2025-09-23', 789, '3333-4444-5555-6666', 'David Hernandez'),
+(5, '2026-10-24', 321, '7777-8888-9999-0000', 'David Hernandez');
+
