@@ -88,3 +88,10 @@ INSERT INTO producto (nombre, descripcion, precio, fecha_inicio, fecha_fin) VALU
 ('Fuji Rock Festival (Naeba, Japón)', 
 'Paquete: Vuelo + Alojamiento en hoteles o alojamientos en la estación de esquí de Naeba. Incluye: Vuelos de ida y vuelta a Tokio o Niigata, estadía en hoteles en la estación de esquí de Naeba o en las cercanías, y transporte al festival.', 
 1900.00, '2024-07-26', '2024-07-28');
+
+INSERT INTO usuario (fecha_nacimiento, nombre, apellidos, dni, correo, contrasenya, esAdmin) VALUES
+('1990-01-15', 'Carlos', 'Garcia', '12345678A', 'carlos.garcia@example.com', 'password1', FALSE),
+('1985-05-23', 'Maria', 'Lopez', '87654321B', 'maria.lopez@example.com', 'password2', FALSE),
+('1992-08-30', 'Juan', 'Martinez', '45678901C', 'juan.martinez@example.com', 'password3', TRUE),
+('1988-12-05', 'Laura', 'Gonzalez', '23456789D', 'laura.gonzalez@example.com', 'password4', FALSE),
+('1995-07-19', 'David', 'Hernandez', '34567890E', 'david.hernandez@example.com', 'password5', FALSE);
