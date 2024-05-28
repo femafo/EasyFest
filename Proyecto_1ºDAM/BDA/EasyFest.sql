@@ -9,7 +9,8 @@ CREATE TABLE usuario (
     dni VARCHAR(20),
     correo VARCHAR(100),
     contrasenya VARCHAR(100),
-    esAdmin BOOLEAN
+    esAdmin BOOLEAN,
+    imagen blob
 );
 
 CREATE TABLE tarjetas (
