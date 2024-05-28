@@ -123,3 +123,17 @@ END;
 //
 DELIMITER ;
 
+DELIMITER //
+CREATE PROCEDURE eliminar_usuario(IN p_id_usuario INT)
+BEGIN
+    DELETE FROM pedidos WHERE id_usuario = p_id_usuario;
+
+    DELETE FROM tarjetas WHERE id_usuario = p_id_usuario;
+
+    DELETE FROM usuario WHERE id_usuario = p_id_usuario;
+END;
+//
+DELIMITER ;
+
+
+
