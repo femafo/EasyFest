@@ -109,6 +109,11 @@ INSERT INTO tarjetas (id_usuario, fecha_caducidad, cvv, num_tarjeta, titular) VA
 (5, '2025-09-23', 789, '3333-4444-5555-6666', 'David Hernandez'),
 (5, '2026-10-24', 321, '7777-8888-9999-0000', 'David Hernandez');
 
+ALTER TABLE producto
+ADD COLUMN id_admin INT,
+ADD CONSTRAINT fk_admin FOREIGN KEY (id_admin) REFERENCES usuario(id_usuario);
+
+UPDATE producto SET id_admin = 3;
 
 DELIMITER //
 CREATE TRIGGER after_pedido_insert
