@@ -108,3 +108,18 @@ INSERT INTO tarjetas (id_usuario, fecha_caducidad, cvv, num_tarjeta, titular) VA
 (5, '2025-09-23', 789, '3333-4444-5555-6666', 'David Hernandez'),
 (5, '2026-10-24', 321, '7777-8888-9999-0000', 'David Hernandez');
 
+
+DELIMITER //
+CREATE TRIGGER after_pedido_insert
+AFTER INSERT ON pedidos
+FOR EACH ROW
+BEGIN
+    INSERT INTO detalles_pedido (id_pedido, id_producto, cantidad)
+    VALUES (NEW.id_pedido, NEW.id_producto, 1); -- Asumiendo una cantidad fija de 1 por defecto
+
+    INSERT INTO historial (fecha_compra, id_pedido, id_usuario)
+    VALUES (NEW.fecha_compra, NEW.id_pedido, NEW.id_usuario);
+END;
+//
+DELIMITER ;
+
