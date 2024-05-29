@@ -129,7 +129,7 @@ AFTER INSERT ON pedidos
 FOR EACH ROW
 BEGIN
     INSERT INTO detalles_pedido (id_pedido, id_producto, cantidad)
-    VALUES (NEW.id_pedido, NEW.id_producto, 1); -- Asumiendo una cantidad fija de 1 por defecto
+    VALUES (NEW.id_pedido, NEW.id_producto, 1); 
 
     INSERT INTO historial (fecha_compra, id_pedido, id_usuario)
     VALUES (NEW.fecha_compra, NEW.id_pedido, NEW.id_usuario);
