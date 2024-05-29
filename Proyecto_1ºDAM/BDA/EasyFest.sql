@@ -58,6 +58,13 @@ CREATE TABLE detalles_pedido (
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido),
     FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 );
+
+CREATE TABLE problemas (
+    id_problema INT PRIMARY KEY AUTO_INCREMENT,
+    descripcion TEXT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 INSERT INTO producto (nombre, descripcion, precio, fecha_inicio, fecha_fin) VALUES
 ('Coachella Valley Music and Arts Festival (California, EE. UU.)', 
 'Paquete: Vuelo + Alojamiento en hoteles cercanos + Transporte al festival. Incluye: Vuelos de ida y vuelta a Los Ángeles o Palm Springs, estadía en hoteles de 3 a 5 estrellas, y transporte diario al festival.', 
@@ -92,11 +99,11 @@ INSERT INTO producto (nombre, descripcion, precio, fecha_inicio, fecha_fin) VALU
 1900.00, '2024-07-26', '2024-07-28');
 
 INSERT INTO usuario (fecha_nacimiento, nombre, apellidos, dni, correo, contrasenya, esAdmin) VALUES
-('1990-01-15', 'Carlos', 'Garcia', '12345678A', 'carlos.garcia@example.com', 'password1', FALSE),
-('1985-05-23', 'Maria', 'Lopez', '87654321B', 'maria.lopez@example.com', 'password2', FALSE),
-('1992-08-30', 'Juan', 'Martinez', '45678901C', 'juan.martinez@example.com', 'password3', TRUE),
-('1988-12-05', 'Laura', 'Gonzalez', '23456789D', 'laura.gonzalez@example.com', 'password4', FALSE),
-('1995-07-19', 'David', 'Hernandez', '34567890E', 'david.hernandez@example.com', 'password5', FALSE);
+('1990-01-15', 'Antonio', 'Martinez', '12345678A', 'antonio@gmail.com', '1234', FALSE),
+('1985-05-23', 'Alex', 'Torres', '87654321B', 'alex@gmail.com', '1234', TRUE),
+('1992-08-30', 'Fermin', 'Masia', '45678901C', 'fermin@gmail.com', '1234', TRUE),
+('1988-12-05', 'Ivan', 'Horcajada', '23456789D', 'ivan@gmail.com', '1234', FALSE),
+('1995-07-19', 'Daniela', 'Vasquez', '34567890E', 'daniela@gmail.com', '1234', FALSE);
 
 INSERT INTO tarjetas (id_usuario, fecha_caducidad, cvv, num_tarjeta, titular) VALUES
 (1, '2025-01-15', 123, '1111-2222-3333-4444', 'Carlos Garcia'),
