@@ -10,7 +10,7 @@ CREATE TABLE usuario (
     correo VARCHAR(100),
     contrasenya VARCHAR(100),
     esAdmin BOOLEAN,
-    imagen blob
+    imagen VARCHAR(50)
 );
 
 CREATE TABLE tarjetas (
@@ -48,6 +48,7 @@ CREATE TABLE producto (
     precio DECIMAL(10, 2),
     fecha_inicio DATE,
     fecha_fin DATE
+    imagen VARCHAR(50)
 );
 
 CREATE TABLE detalles_pedido (
