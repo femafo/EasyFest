@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# Configura las variables
-EMAIL="tu_correo@example.com"
-SUBJECT="Carga Media del Sistema"
-LOAD=$(uptime | awk -F'load average:' '{ print $2 }')
-
-# Envía un correo con la carga media del sistema
-echo -e "La carga media del sistema es: $LOAD" | mail -s "$SUBJECT" $EMAIL
