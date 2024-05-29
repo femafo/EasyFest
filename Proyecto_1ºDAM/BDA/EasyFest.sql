@@ -47,8 +47,8 @@ CREATE TABLE producto (
     descripcion TEXT,
     precio DECIMAL(10, 2),
     fecha_inicio DATE,
-    fecha_fin DATE
-    imagen VARCHAR(50)
+    fecha_fin DATE,
+    imgpr VARCHAR(50)
 );
 
 CREATE TABLE detalles_pedido (
@@ -121,7 +121,6 @@ ALTER TABLE producto
 ADD COLUMN id_admin INT,
 ADD CONSTRAINT fk_admin FOREIGN KEY (id_admin) REFERENCES usuario(id_usuario);
 
-UPDATE producto SET id_admin = 3;
 
 DELIMITER //
 CREATE TRIGGER after_pedido_insert
