@@ -91,10 +91,12 @@
   
       readMoreLink.addEventListener('click', function (event) {
           event.preventDefault(); // Previene el comportamiento por defecto del enlace
-          alert('Estas seguro de que quieres enviar este formulario , este sera antendido lo mas rapido y mejor posible por un administrador'); // Acción para "Leer más"
+          // Aquí es donde vamos a enviar el formulario
+          form.submit();
       });
   });
-  </script>
+</script>
+
   
 </body>
 </html>
