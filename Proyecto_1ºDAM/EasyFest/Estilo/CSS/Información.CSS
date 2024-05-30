@@ -1,0 +1,68 @@
+
+
+/* Estilos para el contenedor principal */
+.container {
+    background-color: white;
+    padding: 20px;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Margen superior e inferior automático y margen izquierdo y derecho automáticos */
+    margin-bottom: 15px;
+    border-radius: 25px; /*Bordes redondeados*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el encabezado principal */
+h1 {
+    text-align: center; /* Alineación centrada del texto */
+    color: rgb(255, 65, 163) ;/*color de las letras*/
+}
+
+/* Estilos para el contenedor de la imagen del equipo */
+.equipo-img {
+    margin-top: 30px;
+    text-align: center; /* Alineación centrada del texto */
+    margin-bottom: 50px; /* Margen inferior */
+}
+
+/* Estilos para el contenedor de los miembros del equipo */
+.equipo {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola fila */
+    justify-content: center; /* Alinea los elementos en el centro horizontalmente */
+}
+
+/* Estilos para cada miembro del equipo */
+.miembro {
+    width: 200px; /* Ancho del contenedor de cada miembro */
+    margin: 20px; /* Margen exterior */
+    text-align: center; /* Alineación centrada del texto */
+}
+.selected{
+    transform: scale(1.1);
+    background-color: #FF1C80;
+    opacity: 90%;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la imagen de cada miembro */
+.miembro-img {
+    width: 150px; /* Ancho de la imagen */
+    height: 150px; /* Alto de la imagen */
+    border-radius: 50%; /* Borde redondeado para que la imagen sea circular */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para la información de contacto */
+.contacto {
+     color: white;
+   margin-bottom: 10px; /* Margen superior */
+    text-align: center; /* Alineación centrada del texto */
+   
+}
+
+/* Estilos para los párrafos de información de contacto */
+p{
+margin-top: 0.5px;
+margin-bottom: 10px;
+}

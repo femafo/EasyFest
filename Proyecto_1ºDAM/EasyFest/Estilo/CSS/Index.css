@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+/*ENCABEZADO*/
+body {
+    background-image: url('http://localhost/EasyFest/Estilo/Imagenes/img5.jpg');
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+header {
+
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+
+/*Encabezado del logo y buscador*/
+
+.header__superior {
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    
+}
+/*MENU*/
+.casa {
+    width: 40px;
+    height: 40px;
+}
+
+.contenedor__menu {
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(to right, #94FFEF, #F2B0FF);
+    padding: 0px 10px;
+}
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+}
+
+nav ul li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: #FF1C80;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+nav > ul > li > .a1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+nav > ul > li > .a2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+nav > ul > li > .a3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #94FFEF, #F2B0FF);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav #home img {
+    filter: invert(1);
+    /* Invierte el color de la imagen */
+}
+
+nav #home a {
+    color: #FF1C80;
+}
+
+nav #home a:hover {
+    color: white;
+}
+
+#selected {
+    transform: scale(1.1);
+    background-color: #FF1C80;
+    color: white;
+    text-align: center;
+    opacity: 90%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*slider*/
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 18s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 90%;
+    height: 85%;
+    margin-left: 60px;
+    border-radius: 25px;
+}
+.Copyright{
+    color: white;
+    text-align: center;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}

@@ -1,0 +1,87 @@
+/* Estilos personalizados para el formulario */
+.problema{
+  margin-top: 50px;
+  font-size: 39px;
+font-weight: bold;
+  text-align: center;
+  background:linear-gradient(to right ,#94ffef, #f2b0ff) ;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1.5px #ff1c80 ;
+margin-bottom: -40px;
+background-position-x: center;
+background-size: 1320px;
+background-repeat: no-repeat;
+}
+
+
+.container {
+  margin: 50px auto; /* Centrado horizontal y margen superior e inferior */
+  padding: 20px; /* Espaciado interno del contenedor del formulario */
+  border-radius: 10px; /* Radio de borde del contenedor del formulario */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor del formulario */
+  color: #00d5ff; /* Color de las letras */
+  background-color: white;
+}
+
+/* Estilos específicos de los campos de entrada */
+.form-label {
+  font-weight: bold; /* Negrita */
+  color: #ff1c80;
+}
+.form-label:hover {
+  cursor: pointer; /* Cambia el cursor al pasar por encima de las etiquetas */
+  transform: scale(1.1); /* Hace que las etiquetas se agranden ligeramente al pasar por encima */
+  transition: transform 0.3s; /* Transición suave */
+}
+
+.form-control {
+  margin-bottom: 20px; /* Margen inferior de los campos de entrada */
+  border: 2px solid black; /* Borde negro */
+  border-radius: 4px; /* Radio de borde */
+  padding: 10px; /* Padding interno */
+}
+
+.form-control:focus {
+  border-color: black; /* Borde negro al enfocar */
+  box-shadow: none; /* Quita el box-shadow al enfocar */
+}
+
+
+button {
+  width: 100%; /* Ancho completo del botón de envío */
+  background-color:#ff1c80 ;
+  color:  white;
+  transition: 1.5s;
+  border-color: white;
+}
+button:hover {
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+}
+.window-notice {
+  background: rgba(33, 41, 52, .85);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+}
+
+.window-notice .content {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 600px;
+  min-width: 320px !important;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
