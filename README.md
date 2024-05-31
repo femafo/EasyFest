@@ -6,6 +6,6 @@ Este repositorio contiene varias carpetas, en las cuales estan almacenados todos
 **El video tutorial que se nos pedía se encuentra en la página web, ya que han habido problemas al intentarlo subir a este repositorio debido al peso de este**
 
 ---
-Para poder que la aplicación funcione correctamente se necesirará la **base de datos** que hemos proporcionado en la carpeta **BD**
+Para poder que la aplicación funcione correctamente se necesirará la **base de datos** que proporcionamos en la carpeta **BD**
 
 
