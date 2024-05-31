@@ -1,27 +1,30 @@
-# Variables de configuración
-$DB_NAME = "Easyfest"
-$DB_USER = "root"
-$DB_PASSWORD = ""
-$BACKUP_DIR = "C:\ruta\a\la\carpeta_de_backup"
-$BACKUP_FILE = "backup_${DB_NAME}_$(Get-Date -Format yyyyMMdd).sql.gz"
-$REMOTE_DIR = "remote:Easyfest_backups"
+# Obtiene la ruta del directorio actual donde se encuentra el script
+$directorioActual = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
 
-# Buscar la ruta de mysqldump.exe
-$mysqldumpExe = Get-Command -Name mysqldump.exe -ErrorAction SilentlyContinue
-if (!$mysqldumpExe) {
-    Write-Error "No se encontró mysqldump.exe en la ruta del sistema"
-    exit 1
+# Crea una ruta completa para el directorio de copia de seguridad dentro del directorio actual
+$directorioCopia = Join-Path -Path $directorioActual -ChildPath "copia_seguridad"
+
+# Comprueba si el directorio de copia de seguridad no existe
+if (-Not (Test-Path -Path $directorioCopia)) {
+    New-Item -ItemType Directory -Path $directorioCopia
 }
 
-# Crear la copia de seguridad y comprimirla
-& $mysqldumpExe -u $DB_USER -p$DB_PASSWORD $DB_NAME | gzip > $BACKUP_DIR\$BACKUP_FILE
+# Verifica si el directorio xampp existe antes de copiarlo
+if (Test-Path -Path "$directorioActual\xampp") {
+    # Obtiene la fecha actual en formato yyyy-MM-dd
+    $fechaActual = Get-Date -Format yyyy-MM-dd
 
-# Buscar la ruta de rclone.exe
-$rcloneExe = Get-Command -Name rclone.exe -ErrorAction SilentlyContinue
-if (!$rcloneExe) {
-    Write-Error "No se encontró rclone.exe en la ruta del sistema"
-    exit 1
+    # Crea una ruta completa para el directorio de copia de seguridad con la fecha actual
+    $directorioCopiaConFecha = Join-Path -Path $directorioCopia -ChildPath $fechaActual
+
+    # Comprueba si el directorio de copia de seguridad con la fecha actual no existe
+    if (-Not (Test-Path -Path $directorioCopiaConFecha)) {
+        # Crea el directorio de copia de seguridad con la fecha actual
+        New-Item -ItemType Directory -Path $directorioCopiaConFecha
+    }
+
+    # Copia la carpeta xampp al directorio de copia de seguridad con la fecha actual
+    Copy-Item -Path "$directorioActual\xampp" -Destination $directorioCopiaConFecha -Recurse
+} else {
+    Write-Host "El directorio xampp no existe en la ruta especificada."
 }
-
-# Subir la copia de seguridad al almacenamiento remoto
-& $rcloneExe copy $BACKUP_DIR\$BACKUP_FILE $REMOTE_DIR
