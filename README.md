@@ -8,6 +8,6 @@ Dejamos el enlace al video el cual esta subido a YouTube: [Video Tutorial](https
 
 
 ---
-Para poder que la aplicación funcione correctamente se necesirará la **base de datos** que proporcionamos en la carpeta **BDA** esta se tiene el nombre de *EasyFest.sql*
+Para poder que la aplicación funcione correctamente se necesirará la **base de datos** que proporcionamos en la carpeta **BDA** esta recibe el nombre de *EasyFest.sql*
 
 
